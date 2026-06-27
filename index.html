@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptation Theory Workspace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+
+    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Adaptation Theory Companion Portal</h1>
+                <p class="text-xs text-slate-400 mt-0.5">Categorized Frameworks for Digital Humanities Research</p>
+            </div>
+            
+            <div class="w-full sm:w-72">
+                <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search keywords, theories, authors..." 
+                       class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-teal-500 placeholder-slate-500 text-slate-200">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-8">
+        
+        <section class="bg-slate-950/30 p-2 rounded-xl border border-slate-800/60 shadow-xl">
+            <div id="tabsContainer" class="flex flex-wrap gap-1">
+                </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-6">
+                <div class="flex justify-between items-center">
+                    <h2 id="activeTabHeading" class="text-xl font-semibold text-slate-200 tracking-wide">Dynamic Section</h2>
+                    <span id="cardCount" class="text-xs bg-slate-800 px-2.5 py-1 rounded-full text-teal-400 font-medium">0 entries found</span>
+                </div>
+                
+                <div id="theoryCardsContainer" class="grid grid-cols-1 gap-4">
+                    </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-950/40 p-6 rounded-xl border border-slate-800 sticky top-24 shadow-2xl">
+                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                        <h3 class="font-semibold text-teal-400 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            Active Research Pad
+                        </h3>
+                        <button onclick="clearNotebook()" class="text-xs text-slate-500 hover:text-rose-400 transition">Clear Pad</button>
+                    </div>
+                    
+                    <textarea id="notebookTextArea" class="w-full h-64 bg-slate-900/80 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-cyan-500 text-slate-300 placeholder-slate-600 resize-none" 
+                              placeholder="Click 'Send to Notebook' on any critical index card to compile data points here instantly..."></textarea>
+                    
+                    <div class="mt-4 flex justify-between items-center">
+                        <p class="text-xxs text-slate-500 italic">Formatting tailored for web-based portfolio indexing structures.</p>
+                        <button onclick="copyNotebookText()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-1.5 rounded transition font-medium">Copy Contents</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/portal.js"></script>
+</body>
+</html>
