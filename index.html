@@ -18,52 +18,67 @@
             
             <div class="w-full sm:w-72">
                 <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search keywords, theories, authors..." 
-                       class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-teal-500 placeholder-slate-500 text-slate-200">
+                    class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-teal-500 text-slate-200 placeholder-slate-500 transition">
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 py-8 space-y-8">
+    <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <section class="bg-slate-950/30 p-2 rounded-xl border border-slate-800/60 shadow-xl">
-            <div id="tabsContainer" class="flex flex-wrap gap-1">
+        <div class="lg:col-span-2 space-y-6">
+            <div id="tabsContainer" class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
                 </div>
-        </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
-            <div class="lg:col-span-2 space-y-6">
-                <div class="flex justify-between items-center">
-                    <h2 id="activeTabHeading" class="text-xl font-semibold text-slate-200 tracking-wide">Dynamic Section</h2>
-                    <span id="cardCount" class="text-xs bg-slate-800 px-2.5 py-1 rounded-full text-teal-400 font-medium">0 entries found</span>
+            <div class="flex justify-between items-center">
+                <h3 id="activeTabHeading" class="text-xl font-bold text-slate-200 tracking-tight">Motivations</h3>
+                <span id="cardCount" class="text-xs font-mono bg-slate-950 px-2.5 py-1 rounded-full text-slate-400 border border-slate-800">0 entries found</span>
+            </div>
+
+            <div id="theoryCardsContainer" class="grid grid-cols-1 gap-4">
+                </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-5 sticky top-24 shadow-xl backdrop-blur-sm">
+                <div class="flex justify-between items-center mb-4 pb-3 border-b border-slate-800">
+                    <h3 class="text-sm font-semibold text-slate-200 tracking-wide flex items-center gap-2">
+                        <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        Active Research Pad
+                    </h3>
+                    <button onclick="clearNotebook()" class="text-xs text-slate-500 hover:text-rose-400 transition">Clear Pad</button>
                 </div>
                 
-                <div id="theoryCardsContainer" class="grid grid-cols-1 gap-4">
-                    </div>
-            </div>
-
-            <div class="space-y-6">
-                <div class="bg-slate-950/40 p-6 rounded-xl border border-slate-800 sticky top-24 shadow-2xl">
-                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
-                        <h3 class="font-semibold text-teal-400 flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                            Active Research Pad
-                        </h3>
-                        <button onclick="clearNotebook()" class="text-xs text-slate-500 hover:text-rose-400 transition">Clear Pad</button>
-                    </div>
-                    
-                    <textarea id="notebookTextArea" class="w-full h-64 bg-slate-900/80 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-cyan-500 text-slate-300 placeholder-slate-600 resize-none" 
-                              placeholder="Click 'Send to Notebook' on any critical index card to compile data points here instantly..."></textarea>
-                    
-                    <div class="mt-4 flex justify-between items-center">
-                        <p class="text-xxs text-slate-500 italic">Formatting tailored for web-based portfolio indexing structures.</p>
-                        <button onclick="copyNotebookText()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-1.5 rounded transition font-medium">Copy Contents</button>
-                    </div>
+                <textarea id="notebookTextArea" class="w-full h-64 bg-slate-900/80 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-cyan-500 text-slate-300 placeholder-slate-600 resize-none" 
+                          placeholder="Click 'Send to Notebook' on any critical index card to compile data points here instantly..."></textarea>
+                
+                <div class="mt-4 flex justify-between items-center">
+                    <p class="text-xxs text-slate-500 italic">Formatting tailored for web-based portfolio indexing structures.</p>
+                    <button onclick="copyNotebookText()" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-semibold px-4 py-2 rounded-lg text-xs tracking-wide transition shadow-md shadow-teal-500/10">
+                        Copy Notes
+                    </button>
                 </div>
             </div>
-
         </div>
     </main>
+
+    <section class="max-w-7xl mx-auto px-4 py-8 border-t border-slate-800 mt-6">
+        <div class="mb-6">
+            <h2 class="text-lg font-bold text-slate-200 flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                Academic Source Library
+            </h2>
+            <p class="text-xs text-slate-400 mt-0.5">Primary source documents and foundational texts stored within the repository environment assets framework.</p>
+        </div>
+        
+        <div id="pdfLibraryContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-4 py-8 border-t border-slate-800/60 mt-12 text-center text-xxs text-slate-600 tracking-wider">
+        DIGITAL HUMANITIES LAB FRAMEWORK • PLATFORM ARCHITECTURE DESIGNED FOR DYNAMIC MAPPING
+    </footer>
 
     <script src="js/portal.js"></script>
 </body>

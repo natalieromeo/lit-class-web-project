@@ -1,26 +1,100 @@
 // Standalone fallback object array layer utilized if local CORS architectural environment policies interrupt JSON fetch routine
 const fallbackDatabase = {
     "Motivations": [
-        { "theorist": "Linda Hutcheon", "concept": "The Economic and Legal Impulses", "page": "86-87", "evidence": "Adaptation is a commercial necessity in Hollywood; a proven property reduces financial risk and provides a pre-sold audience.", "notes": "Explores how financial stability drives the entertainment industry to rely heavily on adaptations." },
-        { "theorist": "Linda Hutcheon", "concept": "Cultural and Personal Desires", "page": "92", "evidence": "The desire to adapt can also be a personal one: a response to a work that has intensely engaged the adapter's imagination.", "notes": "Highlights the artistic, psychological, and interpretive motivations behind reworking a canonical text." }
+        {
+            "theorist": "Linda Hutcheon",
+            "concept": "Socio-Economic & Franchise Motives",
+            "page": "86-90",
+            "evidence": "Socioeconomic motives are obvious: adapting a bestseller or a hit play provides a ready-made audience and reduces the massive financial risk inherent in modern cultural industries.",
+            "notes": "The capital-driven impulses that mandate adaptation. Utilizing pre-sold audiences in major media serves as a risk-mitigation strategy, converting established intellectual properties into predictable revenue streams."
+        },
+        {
+            "theorist": "Linda Hutcheon & Julie Sanders",
+            "concept": "Political & Subversive Decolonization",
+            "page": "92-95",
+            "evidence": "Political motives are equally strong: adapters of canonical works often seek to subvert the authority of the original, de-mythologizing it or relocating its values to expose historic prejudices.",
+            "notes": "Adapting as an act of political reclamation. Creators deliberately appropriate canonical patriarchal, Eurocentric, or colonial source texts to 'write back' to power, subverting the ideological structures of the original."
+        },
+        {
+            "theorist": "Gary R. Bortolotti & Linda Hutcheon",
+            "concept": "Narrative Survival & Biological Proliferation",
+            "page": "2007 Study",
+            "evidence": "The function of adapting from novel to film may be to reach people who don't read novels anymore; the story must now be told in a more culturally acceptable and accessible way.",
+            "notes": "Borrowing from evolutionary biology, stories behave like species; their transposition to new media is an adaptive mechanism to replicate, colonize, and survive in new cultural habitats."
+        }
     ],
     "Techniques": [
-        { "theorist": "Robert Stam", "concept": "Translational Mutation", "page": "Online Corpus", "evidence": "The text becomes a hotbed of semiotic transformation, shifting from verbal signs to visual and acoustic markers.", "notes": "Focuses on the precise technical shifts required when translating literature to a multi-sensory cinematic canvas." },
-        { "theorist": "Linda Hutcheon", "concept": "Showing vs. Telling", "page": "22", "evidence": "Moving from the telling mode (literature) to the showing mode (film, theater) involves a radical shift in artistic execution.", "notes": "A core technical distinction detailing how interior monologues are exteriorized into visual performance." }
+        {
+            "theorist": "Linda Hutcheon",
+            "concept": "Semantic-Syntactic Transcoding",
+            "page": "16, 33",
+            "evidence": "Adaptation is a formal transcoding... involving a shift of medium, genre, or context. It requires translating semantic symbols into the syntactic structures unique to the new medium.",
+            "notes": "The core mechanical methodology of adaptation. Adapters must decode both the semantic tier and the syntactic tier to translate them into a new system."
+        },
+        {
+            "theorist": "Erika Huszár",
+            "concept": "Proppean Functional Narrative Transfer",
+            "page": "2026 Criticism",
+            "evidence": "What is actually transferred from novel to film is something rather similar to the narrative functions described by early 20th century formalist Vladimir Propp.",
+            "notes": "A critique of simple textual transfer. Huszár argues that novel-to-film adaptation does not rely on direct structural transfer, but rather on deep, formalist narrative functions akin to Vladimir Propp's morphology of folktales."
+        }
     ],
     "Cultural Contexts": [
-        { "theorist": "Siobhan O'Flynn", "concept": "Transmedia Adaptation", "page": "Online Corpus", "evidence": "Modern digital environments require works to mutate organically across platforms, shaped by participatory audience metrics.", "notes": "Examines how twenty-first-century digital platforms change how cultural narratives are consumed and adapted." },
-        { "theorist": "Linda Hutcheon", "concept": "Indigenization", "page": "150", "evidence": "When a story travels to a new culture, it is indigenized—freighted with local political, social, and aesthetic values.", "notes": "Essential for studying how global texts are localized into foreign historical frameworks." }
+        {
+            "theorist": "Linda Hutcheon",
+            "concept": "Indigenization & Localized Relocation",
+            "page": "148-153",
+            "evidence": "Indigenization is a process of translating a narrative so thoroughly into a new cultural frame that the original context is overwritten by local associations, politics, and values.",
+            "notes": "The complex process of translating a narrative contextually to fit the geographical, cultural, religious, or political codes of a new territory."
+        }
     ],
     "Fidelity": [
-        { "theorist": "Robert Stam", "concept": "Beyond Fidelity Discourse", "page": "Online Corpus", "evidence": "Fidelity criticism is profoundly moralistic, treating the literary text as a sacred original and the film as a subversion.", "notes": "Argues against evaluating adaptations based solely on how 'faithful' they are to the source material." },
-        { "theorist": "Linda Hutcheon", "concept": "Adaptation as Autonomous Work", "page": "6", "evidence": "An adaptation is a derivation, but it is also an independent, distinct, and self-contained creative entity.", "notes": "Encourages analyzing adaptations on their own artistic merits rather than treating them as lesser copies." }
+        {
+            "theorist": "Kyle William Bishop",
+            "concept": "The Infidelity Spectrum (Faithful to Adulterous)",
+            "page": "2026 Framework",
+            "evidence": "Instead of simply approaching adaptations in terms of their intertextuality, I propose approaching adaptations in terms of a spectrum of fidelity, one that extends from 'faithful' to 'promiscuous' to 'adulterous'.",
+            "notes": "Instead of binary fidelity, Bishop proposes a structured vocabulary of textual infidelity ranging from 'faithful' to 'promiscuous' to 'adulterous'."
+        }
     ],
     "Intertextuality": [
-        { "theorist": "Robert Stam", "concept": "The Intertextual Network", "page": "Online Corpus", "evidence": "Films do not just adapt single books; they enter an endless intertextual web of previous films, cultural tropes, and historical discourses.", "notes": "Explains that adaptations are built from a mosaic of cultural references rather than a isolated linear source." },
-        { "theorist": "Linda Hutcheon", "concept": "The Palimpsestic Experience", "page": "21", "evidence": "We experience adaptations as palimpsests through our memory of other works, viewing the new text through the shadow of the old.", "notes": "Focuses on the audience's psychological experience of reading or watching an adaptation while constantly recalling the original." }
+        {
+            "theorist": "Julie Sanders",
+            "concept": "Appropriation vs. Adaptation Boundaries",
+            "page": "Adaptation and Appropriation",
+            "evidence": "Adaptation signals a relationship with an informing source; appropriation affects a more decisive journey away from the text into an independent cultural space.",
+            "notes": "Adaptation preserves the explicit identity of its source, whereas appropriation takes the text, strips it of original markers, and relocates it into an independent work."
+        }
     ]
 };
+
+// Internal static mapping structure routing resource link workflows to repository assets paths
+const pdfLibraryDatabase = [
+    {
+        "title": "A Theory of Adaptation",
+        "author": "Linda Hutcheon",
+        "fileName": "linda_hutcheon_a_theory_of_adaptationbookfi-org1.pdf",
+        "description": "Foundational textbook mapping parameters across multi-sensory and interactive performance modes."
+    },
+    {
+        "title": "Frankenstein's Adaptive Chain",
+        "author": "Kyle William Bishop",
+        "fileName": "frankenstein infidelity.pdf",
+        "description": "Critical framework exploring structural disloyalty via the fidelity, promiscuity, and adultery lexicon."
+    },
+    {
+        "title": "On the Origin of Adaptations",
+        "author": "Gary R. Bortolotti & Linda Hutcheon",
+        "fileName": "Bortolotti-OriginAdaptationsRethinking-2007.pdf",
+        "description": "Interdisciplinary scholarship modeling narrative survival dynamics against evolutionary biological matrices."
+    },
+    {
+        "title": "Adaptation and Appropriation",
+        "author": "Julie Sanders",
+        "fileName": "Adaptation And Appropriation PDF.pdf",
+        "description": "Taxonomical literature defining critical boundaries between visible adaptations and hidden appropriations."
+    }
+];
 
 let currentDatabase = fallbackDatabase;
 let activeTab = "Motivations";
@@ -50,6 +124,7 @@ function fetchDatabase() {
 function initPortal() {
     renderTabs();
     renderActiveCategory();
+    renderPdfLibrary();
 }
 
 function renderTabs() {
@@ -81,7 +156,7 @@ function switchTab(category) {
 function renderActiveCategory() {
     const heading = document.getElementById('activeTabHeading');
     const badge = document.getElementById('cardCount');
-    if (heading) heading.innerText = `${activeTab} Frameworks`;
+    if (heading) heading.innerText = `${activeTab}`;
     
     const entries = currentDatabase[activeTab] || [];
     if (badge) badge.innerText = `${entries.length} entries found`;
@@ -125,6 +200,38 @@ function renderCards(entries) {
     });
 }
 
+function renderPdfLibrary() {
+    const container = document.getElementById('pdfLibraryContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    pdfLibraryDatabase.forEach(pdf => {
+        const element = document.createElement('div');
+        element.className = "bg-slate-950/20 border border-slate-800/60 rounded-xl p-4 flex flex-col justify-between hover:bg-slate-950/40 transition group";
+        element.innerHTML = `
+            <div class="space-y-2">
+                <div class="p-2 bg-slate-900 border border-slate-800 rounded-lg w-fit group-hover:border-cyan-500/20 transition">
+                    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-200 group-hover:text-cyan-400 transition truncate">${pdf.title}</h4>
+                    <p class="text-xxs font-medium text-slate-500">${pdf.author}</p>
+                </div>
+                <p class="text-xxs text-slate-400 line-clamp-2 pt-1 leading-normal">${pdf.description}</p>
+            </div>
+            <div class="mt-4">
+                <a href="assets/${pdf.fileName}" target="_blank" 
+                   class="w-full text-center block text-xxs uppercase tracking-wider font-semibold bg-slate-900 border border-slate-800 hover:border-teal-500/40 hover:bg-teal-500/10 hover:text-teal-400 py-2 rounded transition">
+                    Open Document
+                </a>
+            </div>
+        `;
+        container.appendChild(element);
+    });
+}
+
 function handleSearch() {
     const query = document.getElementById('searchInput').value.toLowerCase().trim();
     if (!query) {
@@ -163,5 +270,8 @@ function copyNotebookText() {
     const pad = document.getElementById('notebookTextArea');
     if (!pad || !pad.value) return;
     navigator.clipboard.writeText(pad.value);
-    alert("Notebook data copied to clipboard successfully!");
+    
+    const origPlaceholder = pad.placeholder;
+    pad.placeholder = "Copied to clipboard successfully!";
+    setTimeout(() => { pad.placeholder = origPlaceholder; }, 2000);
 }
