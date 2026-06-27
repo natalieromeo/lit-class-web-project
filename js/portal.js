@@ -222,7 +222,7 @@ function renderPdfLibrary() {
                 <p class="text-xxs text-slate-400 line-clamp-2 pt-1 leading-normal">${pdf.description}</p>
             </div>
             <div class="mt-4">
-                <a href="assets/${pdf.fileName}" target="_blank" 
+                <a href="assets/${pdf.fileName}" target="_blank" rel="noopener noreferrer"
                    class="w-full text-center block text-xxs uppercase tracking-wider font-semibold bg-slate-900 border border-slate-800 hover:border-teal-500/40 hover:bg-teal-500/10 hover:text-teal-400 py-2 rounded transition">
                     Open Document
                 </a>
