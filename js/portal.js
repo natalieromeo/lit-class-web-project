@@ -69,30 +69,49 @@ const fallbackDatabase = {
 };
 
 // Internal static mapping structure routing resource link workflows to repository assets paths
+// Internal static mapping structure routing resource link workflows to repository assets paths
 const pdfLibraryDatabase = [
     {
         "title": "A Theory of Adaptation",
         "author": "Linda Hutcheon",
         "fileName": "linda_hutcheon_a_theory_of_adaptationbookfi-org1.pdf",
-        "description": "Foundational textbook mapping parameters across multi-sensory and interactive performance modes."
+        "description": "Foundational textbook outlining a transdisciplinary framework for adaptations across media, focusing on modes of engagement (telling, showing, interacting)."
     },
     {
         "title": "Frankenstein's Adaptive Chain",
         "author": "Kyle William Bishop",
         "fileName": "frankenstein infidelity.pdf",
-        "description": "Critical framework exploring structural disloyalty via the fidelity, promiscuity, and adultery lexicon."
+        "description": "Critical essay establishing a spectrum of textual fidelity ranging from faithful to promiscuous and adulterous, using Mary Shelley's novel as a core case study."
     },
     {
         "title": "On the Origin of Adaptations",
         "author": "Gary R. Bortolotti & Linda Hutcheon",
         "fileName": "Bortolotti-OriginAdaptationsRethinking-2007.pdf",
-        "description": "Interdisciplinary scholarship modeling narrative survival dynamics against evolutionary biological matrices."
+        "description": "Interdisciplinary study applying evolutionary biology paradigms to adaptation studies, reframing narrative 'success' as cultural replication and propagation."
     },
     {
         "title": "Adaptation and Appropriation",
         "author": "Julie Sanders",
         "fileName": "Adaptation And Appropriation PDF.pdf",
-        "description": "Taxonomical literature defining critical boundaries between visible adaptations and hidden appropriations."
+        "description": "Taxonomical analysis exploring the analytical boundaries, overlaps, and generic shifts separating recognized adaptations from hidden or transformed appropriations."
+    },
+    {
+        "title": "Theorizing Adaptation in the 21st Century",
+        "author": "Oxford Scholarship Online",
+        "fileName": "oso-9780197511176-chapter-5.pdf",
+        "description": "Historical and critical overview examining the scholarly rise of adaptation studies and the evolving systemic relationship between theory and textual adaptation."
+    },
+    {
+        "title": "Literary Techniques: Intertextuality",
+        "author": "Matrix Education",
+        "fileName": "Literary Techniques_ Intertextuality _ The Matrix Literary Techniques Toolkit.pdf",
+        "description": "Pedagogical toolkit mapping the mechanics of intertextual layers, exploring structural literary devices such as parody, allusion, and pastiche."
+    },
+    {
+        "title": "Adaptation Theory in Film Studies",
+        "author": "Literary Latitude",
+        "fileName": "Adaptation Theory in Film Studies – Literary Latitude.pdf",
+        "description": "Critical compilation and visual reference mapping foundational perspectives of novel-to-film adaptation methodologies."
     }
 ];
 
