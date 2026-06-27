@@ -229,7 +229,7 @@ function renderPdfLibrary() {
             </div>
         `;
         container.appendChild(element);
-    });
+    }); 
 }
 
 function handleSearch() {
