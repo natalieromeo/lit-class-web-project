@@ -1,4 +1,3 @@
-# lit-class-web-project
 # Adaptation Theory Companion Portal
 
 An interactive, responsive single-page web application designed for Digital Humanities research, text analysis, and the critical indexing of novel-to-film adaptation frameworks. 
